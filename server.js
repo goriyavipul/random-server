@@ -13,6 +13,11 @@ app.get('/', (req, res) => {
     res.redirect(`/${uuidV4()}`);
 });
 
+app.get("/healthcheck", (req, res) => {
+  console.log("working find");
+  res.send({ success: true });
+});
+
 app.get('/:room', (req, res) => {
     res.render('room', { roomId: req.params.room });
 });
