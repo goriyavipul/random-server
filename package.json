@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon server.js",
-    "build": "npm i && nodemon server.js",
-    "start": "nodemon server.js"
+    "build": "npm install",
+    "dev": "nodemon server",
+    "start": "nodemon server"
   },
   "keywords": [],
   "author": "",
